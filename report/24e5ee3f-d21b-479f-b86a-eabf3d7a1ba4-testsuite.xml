@@ -1,0 +1,74 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1552964086131" stop="1552964086194">
+  <name>scripts.test_01</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1552964086131" status="passed" stop="1552964086131">
+      <name>Test01.test001</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8344-MainThread"/>
+        <label name="host" value="R2UMFEYPXO9W45R"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1552964086131" status="passed" stop="1552964086131">
+          <name>001方法被执行</name>
+          <title>001方法被执行</title>
+          <attachments>
+            <attachment source="1316637a-610b-4d7f-9f12-9b06f746d229-attachment.txt" title="点击新增地址按钮" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1552964086131" status="passed" stop="1552964086131">
+      <name>Test01.test002</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8344-MainThread"/>
+        <label name="host" value="R2UMFEYPXO9W45R"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1552964086131" status="passed" stop="1552964086131">
+          <name>002方法被执行</name>
+          <title>002方法被执行</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1552964086131" status="failed" stop="1552964086194">
+      <name>Test01.test003</name>
+      <failure>
+        <message>AssertionError: assert False</message>
+        <stack-trace>self = &lt;scripts.test_01.Test01 object at 0x04307170&gt;
+
+    @allure.severity("RITICAL")
+    def test003(self):
+        print("断言失败,截图并写入报告")
+        with open("./image/faile.png","rb") as f:
+            allure.attach("失败原因",f.read(),allure.attach_type.PNG)
+&gt;           assert False
+E           assert False
+
+scripts\test_01.py:28: AssertionError</stack-trace>
+      </failure>
+      <attachments>
+        <attachment source="d5dbc97e-598d-4d41-8bce-f5a853577d09-attachment.png" title="失败原因" type="image/png"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="RITICAL"/>
+        <label name="thread" value="8344-MainThread"/>
+        <label name="host" value="R2UMFEYPXO9W45R"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
